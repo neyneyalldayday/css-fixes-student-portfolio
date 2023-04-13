@@ -1,0 +1,170 @@
+
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.header {
+    height: 30rem;
+    background: url('./images/02-hero-bg.jpg') no-repeat center center;
+    background-size: 100%;
+    object-fit: cover;
+}
+
+.header-navigation {
+    display: flex;
+    background-color: teal;
+    justify-content: space-between;
+}
+
+.header-navigation nav ul {
+    display: flex;
+    list-style: none;
+    
+}
+
+.header-navigation nav ul li {
+    /* Style the Nav Items */
+    margin-right: 25px;
+}
+
+.profile-image {    
+    width: 100%;
+   
+}
+.profile-image-wrapper{
+    width: 50rem;
+    
+}
+
+.about-me-text{
+    padding: 1rem;
+    max-width: 30rem;
+}
+
+.about-me-text p {
+    font-size: 2em;
+}
+section {
+    display: flex;
+    min-height: 1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+section h2 {
+    width: 150px;
+    flex-shrink: 0;
+}
+
+#resume {
+    height: 200px;
+}
+h2 {
+    color:blue;
+    font-size: 40px;
+    left: 50px;
+}
+
+.vl {
+    background-color: aquamarine;
+    width: 4px;
+    margin-left: 10px;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+.images {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.large-image-wrapper {
+    border: 3px solid aquamarine;
+    height: 250px;
+    flex-grow: 1;
+    position: relative;
+}
+
+.title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: aquamarine;
+    padding: 10px;
+}
+
+.large-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.small-images-wrapper {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+.small-images {
+    border: 3px solid aquamarine;
+    flex-grow: 1;
+    object-fit: contain;
+    width: 30rem;
+    position: relative;
+}
+.small-image {
+    width: 100%;
+}
+.footer ul {
+    display: flex;
+    flex-direction: row;   
+    gap: 1rem;
+    align-items: center;
+    padding-top: 3rem;
+}
+li {
+    list-style: none;
+}
+#contact-me {
+    display: flex;
+    
+}
+
+
+@media screen and (max-width: 768px){
+
+
+    #about-me{
+        display: flex;
+        flex-direction: column;
+        border-top: 4px aquamarine solid;
+        
+    }
+
+    #work{
+        display: flex;
+        flex-direction: column;
+        border-top: 4px aquamarine solid;
+    }
+
+    .bottom{
+        flex-direction: column;        
+    }
+
+    .footer ul {
+        flex-direction: column;
+        border-top: 4px aquamarine solid;
+        padding-top: 1rem;
+    }
+
+    .profile-image-wrapper{
+        width: 30rem;
+    }
+
+    .about-me-text{
+        font-size: 1em;
+    }
+}
